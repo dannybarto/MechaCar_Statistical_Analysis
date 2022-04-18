@@ -64,7 +64,7 @@ The predictability does indeed decrease when removing vehicle weight/spoiler ang
 
 
 # Deliverable 2:  
-## Create Visulizations for the TRIp Analysis
+## Create Visulizations for the Trip Analysis
 ### Deliverable 2 Overview:
 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. A summaryt statistics table will be created by utilizing R and it will show the following:
@@ -79,7 +79,7 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 
 View of the Total_Summary Dataframe:
 
-![d1]https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_1.png)
+![d1](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_1.png)
 
 4. Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
