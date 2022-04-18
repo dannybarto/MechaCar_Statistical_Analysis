@@ -46,7 +46,7 @@ The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCar
 				
 
 **Statistical Summary:** 
-![d1]()
+![d1](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Linear_Regression_1.png)
 
 ## Observations:
 
@@ -60,7 +60,7 @@ the vehicle weight, spoiler angle and all wheel drive (AWD) variables have p-Val
 
 The predictability does indeed decrease when removing vehicle weight/spoiler angle/AWD. The r-squared value decreases from 0.7149 as indicated above to 0.674. 
 
-![d1]()
+![d1](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Linear_Regression_Sum.png)
 
 
 # Deliverable 2:  
@@ -79,13 +79,13 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 
 View of the Total_Summary Dataframe:
 
-![d1]()
+![d1]https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_1.png)
 
 4. Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
 View of the Lot_Summary Dataframe
 
-![d1]()
+![d1](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_2.png)
 
 5. Save your MechaCarChallenge.RScript file to your GitHub repository.
 
@@ -100,19 +100,20 @@ The results of testing the weight capacities of supension coils can be derived f
 
 1. A view of all manufacturing lots:
 
-![d2]()
+![d2](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_1.png)
 
 2. More granular view of each of the lots individually
 
-![d2]()
+![d2](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/Suspension_Coils_2.png)
 
 The design specifications for the MechaCar suspension coils call for a variance that does not exceed 100 PSI.
 
 A review of the total population fo the production lots shows a variance of 62.3 PSI. This falls within the within the 100 PSI requirement.
 
-At the individual lot level it is clar that the majority of the variance is driven by lot 3 as shown in the boxplot below
+T-test() to determine if PSI across all mfg lots is statistically different from population mean of 1500 PSI
 
-![d2]()
+![d3](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/R_Plot.png)
+
 
 # Deliverable 3:  
 ### Deliverable 3 Overview:
@@ -130,17 +131,14 @@ Using your knowledge of R, perform t-tests to determine if all manufacturing lot
  A t-test on the suspension coil data is necessary  to determine if there is a statistical difference between the mean of the current sample dataset and a hypothesized, potential dataset. 
 
 The following is a summary of the t-test results across all manufacturing lots assuming a population mean of 1500:
-![d3]()
+![d3](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/T-Test_1.png)
+![d4](https://github.com/dannybarto/MechaCar_Statistical_Analysis/blob/30182147017652bdd767c21830f52171b2d9821d/Resources/Images/T-Test_2.png)
 
 This demonstrates a true sample mean of 1498.78. This corroborates our summary statistics.  At a p-Value of 0.06 there is not sufficient evidence to support rejection of the null hypothesis The mean of all the lots is within the 1500 range.
-
-The following is a summry of the t-test results for each lot individually
 
 1. Lot has sample mean of 1500. With this we cannot reject the null hypothesis that there isn't a statistical difference between the sample mean nand the potential population mean.
 2. Lot 2 is not far off from the 1500 we want to see with sample mean of 1500.02, as well as a p-Value of 0.61. As with Lot 1, the null hypothesis cannot be rejected.
 3. Lot 3, is a little different as noted above. The sample mean here is 1496.14 with a p-Value of 0.04. This is actually lower than the  which is lower than the common significance level of 0.05. Based on this we could make the argument to reject the null hypothesis.
-
- ![d3]()
 
 # Deliverable 4:  
 ## Study Design: MechaCar vs Competition
